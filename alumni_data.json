@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Jane Doe",
+    "lat": 34.0522,
+    "lng": -118.2437,
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ" 
+  },
+  {
+    "id": 2,
+    "name": "John Smith",
+    "lat": 40.7128,
+    "lng": -74.0060,
+    "videoUrl": "https://www.youtube.com/embed/videoseries?list=PLXszS2X8qBwGf_nQCT22t3OPhS1uuFaDE"
+  },
+  {
+    "id": 3,
+    "name": "Aisha Khan",
+    "lat": 51.5074,
+    "lng": 0.1278,
+    "videoUrl": "https://www.youtube.com/embed/3JZ_D3ELwOQ"
+  },
+  {
+    "id": 4,
+    "name": "Kenji Tanaka",
+    "lat": 35.6895,
+    "lng": 139.6917,
+    "videoUrl": "https://www.youtube.com/embed/Y_plhk1FUQA"
+  },
+  {
+    "id": 5,
+    "name": "Maria Garcia",
+    "lat": -34.6037,
+    "lng": -58.3816,
+    "videoUrl": "https://www.youtube.com/embed/QH2-TGUlwu4" 
+  }
+]
