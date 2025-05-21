@@ -4,13 +4,19 @@
     "name": "Jane Doe",
     "lat": 34.0522,
     "lng": -118.2437,
-    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ" 
+    "occupation": "Software Engineer",
+    "country": "USA",
+    "thumbnailUrl": "images/thumb1.png",
+    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
   {
     "id": 2,
     "name": "John Smith",
     "lat": 40.7128,
     "lng": -74.0060,
+    "occupation": "Teacher",
+    "country": "USA",
+    "thumbnailUrl": "images/thumb2.png",
     "videoUrl": "https://www.youtube.com/embed/videoseries?list=PLXszS2X8qBwGf_nQCT22t3OPhS1uuFaDE"
   },
   {
@@ -18,6 +24,9 @@
     "name": "Aisha Khan",
     "lat": 51.5074,
     "lng": 0.1278,
+    "occupation": "Data Scientist",
+    "country": "UK",
+    "thumbnailUrl": "images/thumb3.png",
     "videoUrl": "https://www.youtube.com/embed/3JZ_D3ELwOQ"
   },
   {
@@ -25,6 +34,9 @@
     "name": "Kenji Tanaka",
     "lat": 35.6895,
     "lng": 139.6917,
+    "occupation": "Graphic Designer",
+    "country": "Japan",
+    "thumbnailUrl": "images/thumb4.png",
     "videoUrl": "https://www.youtube.com/embed/Y_plhk1FUQA"
   },
   {
@@ -32,6 +44,9 @@
     "name": "Maria Garcia",
     "lat": -34.6037,
     "lng": -58.3816,
-    "videoUrl": "https://www.youtube.com/embed/QH2-TGUlwu4" 
+    "occupation": "Project Manager",
+    "country": "Argentina",
+    "thumbnailUrl": "images/thumb5.png",
+    "videoUrl": "https://www.youtube.com/embed/QH2-TGUlwu4"
   }
 ]

@@ -66,3 +66,42 @@ body, html {
     width: 100%; /* Make iframe responsive */
     min-height: 350px; /* Minimum height */
 }
+
+/* Custom Alumni Marker Styles */
+.custom-alumni-marker {
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically align items in the center */
+    border: 1px solid #ccc;
+    /* iconSize in JS was [150, 60], so width should be around 150px */
+    /* height will be determined by content or can be set explicitly */
+    width: auto; /* Allow width to be determined by content, up to a max */
+    max-width: 200px; /* Adjust as needed */
+    min-width: 150px; /* Ensure it's not too small */
+}
+
+.custom-alumni-marker .marker-thumbnail {
+    margin-right: 8px; /* Space between thumbnail and text */
+}
+
+.custom-alumni-marker .marker-thumbnail img {
+    width: 40px; /* Match JS inline style */
+    height: 40px; /* Match JS inline style */
+    border-radius: 50%; /* Match JS inline style */
+    border: 1px solid #ddd;
+    display: block; /* Remove extra space below image */
+}
+
+.custom-alumni-marker .marker-info {
+    font-size: 10px; /* Smaller font for compact info */
+    line-height: 1.3;
+    color: #333;
+}
+
+.custom-alumni-marker .marker-info b {
+    font-size: 11px; /* Slightly larger for name */
+    color: #000;
+}
