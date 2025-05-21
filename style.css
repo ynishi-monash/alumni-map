@@ -17,29 +17,35 @@ body, html {
 
 /* Modal styles */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1000; /* Sit on top */
+    display: none;
+    position: fixed;
+    z-index: 1000;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
-    padding-top: 60px; /* Location of the box */
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+    /* padding-top: 60px; */ /* Remove or adjust if .modal-content margin:auto is used for centering */
+    display: flex; /* Use flex to center .modal-content */
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
 }
 
 .modal-content {
     background-color: #fefefe;
-    margin: 5% auto; /* 5% from the top and centered */
+    margin: auto; /* Centered for both vertical and horizontal */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-    max-width: 700px; /* Maximum width */
+    width: 90vw; /* 90% of viewport width */
+    height: 90vh; /* 90% of viewport height */
+    max-width: none; /* Remove or override previous max-width if any */
     position: relative;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     animation-name: animatetop;
-    animation-duration: 0.4s
+    animation-duration: 0.4s;
+    display: flex; /* Use flexbox to manage content */
+    flex-direction: column; /* Stack children vertically */
 }
 
 /* Add Animation */
@@ -49,22 +55,39 @@ body, html {
 }
 
 .close-button {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+    /* Remove previous float and font-size for 'x' */
+    /* color: #aaa; */ /* Keep or adjust as needed */
+    /* float: right; */ /* REMOVE */
+    /* font-size: 28px; */ /* REMOVE or adjust */
+    /* font-weight: bold; */ /* REMOVE or adjust */
+    
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 8px 15px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #333;
+    font-size: 14px;
+    font-weight: normal; /* Or bold if preferred */
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 10; /* Ensure it's above video iframe if there's overlap */
 }
 
 .close-button:hover,
 .close-button:focus {
+    background-color: #e0e0e0;
     color: black;
-    text-decoration: none;
-    cursor: pointer;
+    text-decoration: none; /* Ensure no underline on hover */
 }
 
 #alumni-video {
-    width: 100%; /* Make iframe responsive */
-    min-height: 350px; /* Minimum height */
+    width: 100%;
+    /* height: calc(100% - 50px); */ /* Adjust based on padding and button height */
+    flex-grow: 1; /* Allow iframe to take available space */
+    border: none; /* Remove iframe border if any */
 }
 
 /* Custom Alumni Marker Styles */

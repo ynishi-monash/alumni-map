@@ -19,6 +19,12 @@ function openModal(videoUrl) {
 function closeModal() {
     videoModal.style.display = 'none';
     videoFrame.src = ''; // Stop video by clearing src
+
+    // Zoom out to world view with animation
+    map.flyTo([20, 0], 2, { // Target coordinates [lat, lng], zoom level
+        animate: true,
+        duration: 1.5 // Animation duration in seconds
+    });
 }
 
 // Add event listener to close button (KEEP THIS CODE AS IS)
